@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using XBOXValidator.Model;
+using WHSQA.Model;
 
-namespace XBOXValidator.HelperClasses
+namespace WHSQA.HelperClasses
 {
     class FileSeeker
     {

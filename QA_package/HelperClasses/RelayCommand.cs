@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace XBOXValidator.HelperClasses
+namespace WHSQA.HelperClasses
 {
     public class RelayCommand : ICommand
     {

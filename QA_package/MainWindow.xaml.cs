@@ -13,9 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using XBOXValidator.classes;
+using WHSQA.classes;
 
-namespace XBOXValidator
+namespace WHSQA
 {
     /// <summary>
     /// Interakční logika pro MainWindow.xaml

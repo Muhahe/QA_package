@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using XBOXValidator.HelperClasses;
+using WHSQA.HelperClasses;
 
-namespace XBOXValidator.Model
+namespace WHSQA.Model
 {
     class SingleSnapshotModel
     {

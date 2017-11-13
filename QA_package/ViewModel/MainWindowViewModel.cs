@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
-using XBOXValidator.HelperClasses;
-using XBOXValidator.Model;
+using WHSQA.HelperClasses;
+using WHSQA.Model;
 
-namespace XBOXValidator.classes
+namespace WHSQA.classes
 {
     class MainWindowViewModel
     {

@@ -1,72 +1,12 @@
-﻿<Window x:Class="XBOXValidator.MainWindow"
+﻿<Window x:Class="WHSQA.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:XBOXValidator"
         mc:Ignorable="d"
         Title="MainWindow" Height="403.529" Width="875.608">
     <Grid>
-        <Button Content="Select folder" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Command="{Binding PickFolderCommand}"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="377" Text="{Binding Path=FolderPathModel.FolderPath, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" />
-        <Button Content="Read" HorizontalAlignment="Left" Height="20" Margin="511,10,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ReadSnapsotsCommand}"/>
-        <Button Content="Generate" HorizontalAlignment="Left" Height="20" Margin="783,10,0,0" VerticalAlignment="Top" Width="75" Command="{Binding GenerateSnapshotsCommand}"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Height="20" Margin="703,10,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ClearSnapshotsCommand}"/>
-        <Button x:Name="BreakOnRootButton" Content="BORF on" HorizontalAlignment="Left" Height="20" Margin="511,35,0,0" VerticalAlignment="Top" Width="75" Command="{Binding RemoveBreakOnRootCommand}" CommandParameter="{Binding senderObject}"/>
-
-
-        <ListView x:Name="snapshotList" ItemsSource="{Binding snapshotListModel.SnapshotItems}" Margin="10,68,10,40">
-            <ListView.View>
-                <GridView>
-                    <GridView.Columns>
-                        <GridViewColumn>
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <CheckBox IsChecked="{Binding Included}"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-
-                        <GridViewColumn DisplayMemberBinding="{Binding SnapshotPath}">
-                            <GridViewColumn.Header>
-                                <GridViewColumnHeader Tag="SnapshotPath" Click="GridViewColumnHeaderClickHandler">
-
-                                    Path
-
-
-                                </GridViewColumnHeader>
-                            </GridViewColumn.Header>
-                        </GridViewColumn>
-
-                        <GridViewColumn DisplayMemberBinding="{Binding EntityName}">
-                            <GridViewColumn.Header>
-                                <GridViewColumnHeader Tag="EntityName" Click="GridViewColumnHeaderClickHandler">Entity Name</GridViewColumnHeader>
-                            </GridViewColumn.Header>
-                        </GridViewColumn>
-                        <GridViewColumn DisplayMemberBinding="{Binding SnapshotId}">
-                            <GridViewColumn.Header>
-                                <GridViewColumnHeader Tag="SnapshotId" Click="GridViewColumnHeaderClickHandler">ID</GridViewColumnHeader>
-                            </GridViewColumn.Header>
-                        </GridViewColumn>
-                        <GridViewColumn DisplayMemberBinding="{Binding EntityNumber}">
-                            <GridViewColumn.Header>
-                                <GridViewColumnHeader Tag="EntityNumber" Click="GridViewColumnHeaderClickHandler">Entity N.</GridViewColumnHeader>
-                            </GridViewColumn.Header>
-                        </GridViewColumn>
-                        <GridViewColumn DisplayMemberBinding="{Binding ErrorNumber}">
-                            <GridViewColumn.Header>
-                                <GridViewColumnHeader Tag="ErrorNumber" Click="GridViewColumnHeaderClickHandler">Error N.</GridViewColumnHeader>
-                            </GridViewColumn.Header>
-                        </GridViewColumn>
-                        <GridViewColumn DisplayMemberBinding="{Binding ErrorMessage}">
-                            <GridViewColumn.Header>
-                                <GridViewColumnHeader Tag="ErrorMessage" Click="GridViewColumnHeaderClickHandler">Error Message</GridViewColumnHeader>
-                            </GridViewColumn.Header>
-                        </GridViewColumn>
-                    </GridView.Columns>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        
         
     </Grid>
 </Window>
